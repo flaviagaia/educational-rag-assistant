@@ -1,0 +1,5 @@
+{
+  "dataset_name": "Syllabus-style educational corpus",
+  "dataset_reference": "Locally curated education-tech sample inspired by course materials, policies, and study guides.",
+  "dataset_note": "This repository uses a compact local academic corpus so the RAG workflow remains deterministic, testable, and production-oriented without external network dependencies."
+}
