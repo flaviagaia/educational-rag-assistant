@@ -136,6 +136,20 @@ Exemplo de payload:
 }
 ```
 
+### Contrato da API
+`POST /ask` retorna:
+- `question`
+- `answer`
+- `confidence`
+- `sources`
+- `limitation_note`
+
+Esse contrato já deixa o projeto pronto para:
+- front-end conversacional;
+- logging e observabilidade;
+- integração com backend de produto;
+- handoff para engenharia.
+
 ### Do básico ao avançado
 No nível básico, este é um projeto de retrieval + answer building.
 
@@ -161,6 +175,15 @@ No nível avançado, ele permite discutir:
 - guardar documentos em `pgvector` ou `FAISS`;
 - incluir avaliação offline por conjunto de perguntas esperadas;
 - evoluir o fluxo para `LangGraph`.
+
+### Arquitetura alvo em produção
+Uma evolução natural deste MVP seria:
+- ingestão automática de materiais de curso;
+- indexação em vector store;
+- retrieval híbrido;
+- answer generation com LLM;
+- tracing e avaliação;
+- API plugada em produto educacional.
 
 ## EN
 
@@ -222,3 +245,12 @@ This repository is useful to discuss:
 - retrieval quality and chunk granularity;
 - API handoff to engineering;
 - evolution toward embeddings, reranking, and LangGraph.
+
+### Production-facing interpretation
+This MVP already separates:
+- corpus generation;
+- retrieval;
+- answer construction;
+- API delivery.
+
+That separation makes the feature easier to hand off to engineering for production integration.
