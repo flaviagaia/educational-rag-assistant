@@ -35,17 +35,17 @@ flowchart LR
 ```
 
 ### Estrutura do repositório
-- [src/sample_data.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/src/sample_data.py)
+- [src/sample_data.py](src/sample_data.py)
   Gera o corpus local e registra a referência pública do dataset.
-- [src/retrieval.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/src/retrieval.py)
+- [src/retrieval.py](src/retrieval.py)
   Implementa o retrieval lexical com `TF-IDF + cosine similarity`.
-- [src/generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/src/generation.py)
+- [src/generation.py](src/generation.py)
   Constrói a resposta grounded e organiza as citações.
-- [src/pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/src/pipeline.py)
+- [src/pipeline.py](src/pipeline.py)
   Orquestra o run ponta a ponta e exporta o relatório.
-- [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/app.py)
+- [app.py](app.py)
   Expõe uma API simples em `FastAPI`.
-- [tests/test_project.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/tests/test_project.py)
+- [tests/test_project.py](tests/test_project.py)
   Valida o contrato mínimo do pipeline.
 
 ### Corpus educacional
@@ -91,7 +91,7 @@ Mesmo sendo um MVP, o repositório já mostra como esse RAG poderia ser consumid
 
 ### Contrato de saída
 O pipeline gera:
-- [educational_rag_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/data/processed/educational_rag_report.json)
+- [educational_rag_report.json](data/processed/educational_rag_report.json)
 
 Campos principais:
 - `question`
@@ -162,12 +162,6 @@ No nível avançado, ele permite discutir:
 - handoff para engenharia via API;
 - evolução para embeddings, reranking e LangGraph.
 
-### Como defender este projeto em entrevista
-- ele mostra RAG de ponta a ponta em Python;
-- é fácil de integrar com frameworks de engenharia;
-- deixa explícita a separação entre retrieval e generation;
-- mostra grounding, citações e limites da resposta;
-- se aproxima de um caso real de EdTech, que é exatamente o contexto da vaga.
 
 ### Próximos passos naturais
 - trocar `TF-IDF` por embeddings;
@@ -212,7 +206,7 @@ That is why an education-focused assistant should:
 
 ### Output contract
 The project exports:
-- [educational_rag_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/educational-rag-assistant/data/processed/educational_rag_report.json)
+- [educational_rag_report.json](data/processed/educational_rag_report.json)
 
 Main fields:
 - `question`
